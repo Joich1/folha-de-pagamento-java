@@ -90,9 +90,17 @@ public class SistemaColaboradores {
                 }
                 break;
 
+                case 3: 
+                System.out.println("Encerrando o sistema....");
+                break;
+
+                default:
+                System.out.println("opção invalidade, tente novamented");
+
             }
             
         }
+        sc.close();
     }
     
 }
