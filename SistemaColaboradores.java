@@ -52,14 +52,23 @@ public class SistemaColaboradores {
 
                 String cargo = "";
                 double sbase = 0.0;
-                double bonificacao - 0.0;
+                double bonificacao = 0.0;
 
                 if (opcaoCargo == 1){
                     cargo = "Junior";
                     sbase = 3000.0;
                     bonificacao = 200.0;
                 }else if (opcaoCargo == 2){
-
+                    cargo = "Pleno";
+                    sbase = 6000.0;
+                    bonificacao = 500.0;
+                }else if (opcaoCargo == 3 ){
+                    cargo = "Senior";
+                    sbase = 10000.0;
+                    bonificacao = 1000.0;
+                }else{
+                    System.out.println("cargo invalido, selecione um valido, cadastro cancelado");
+                    break;
                 }
             }
             
