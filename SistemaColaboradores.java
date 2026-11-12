@@ -32,7 +32,9 @@ public class SistemaColaboradores {
                 opcao = sc.nextInt();
                 sc.nextLine();
             }else{
-                System.out.println();
+                System.out.println("Opção invalida, porfavor, escolha um dos numeros a cima");
+                sc.nextLine();
+                continue;
             }
             
         }
