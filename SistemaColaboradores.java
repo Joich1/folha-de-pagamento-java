@@ -22,7 +22,7 @@ public class SistemaColaboradores {
         int opcao = 0;
 
         while (opcao != 3){
-            System.out.println("sistema de gestão");
+            System.out.println("SISTEMA DE GESTÃO");
             System.out.println("1 cadastrar novo colaborador");
             System.out.println("2 Ver lista");
             System.out.println("3 Sair");
@@ -70,6 +70,22 @@ public class SistemaColaboradores {
                     System.out.println("cargo invalido, selecione um valido, cadastro cancelado");
                     break;
                 }
+                double sfinal = sbase + bonificacao;
+
+                Colaborador novoColaborador = new Colaborador(nome, cargo, sbase, sfinal);
+                ListaColaboradores.add(novoColaborador);
+
+                System.out.println("Colaborador cadastrado com sucesso!");
+                break;
+
+                case 2 :
+                System.out.println("LISTA DE COLABORADORES CADASTRADO");
+                if (ListaColaboradores.isEmpty()){
+                    System.out.println("nenhum colaborador cadastrado ainda");
+                }else{
+                    
+                }
+
             }
             
         }
