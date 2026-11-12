@@ -23,9 +23,9 @@ public class SistemaColaboradores {
 
         while (opcao != 3){
             System.out.println("sistema de gestão");
-            System.out.println("1. cadastrar novo colaborador");
-            System.out.println("2. Ver lista");
-            System.out.println("3. Sair");
+            System.out.println("1 cadastrar novo colaborador");
+            System.out.println("2 Ver lista");
+            System.out.println("3 Sair");
             System.out.println("Escolha uma das opções a cima");
 
             if (sc.hasNextInt()){
@@ -38,7 +38,29 @@ public class SistemaColaboradores {
             }
 
             switch(opcao){
-                
+                case 1:
+                System.out.print("Digite o nome do Colaborador:");
+                String nome = sc.nextLine();
+
+                System.out.println("Escolha o cargo:");
+                System.out.println("1 Junior");
+                System.out.println("2 Pleno");
+                System.out.println("3 Senior");
+                System.out.println("opção de cargo: ");
+                int opcaoCargo = sc.nextInt();
+                sc.nextLine();
+
+                String cargo = "";
+                double sbase = 0.0;
+                double bonificacao - 0.0;
+
+                if (opcaoCargo == 1){
+                    cargo = "Junior";
+                    sbase = 3000.0;
+                    bonificacao = 200.0;
+                }else if (opcaoCargo == 2){
+
+                }
             }
             
         }
