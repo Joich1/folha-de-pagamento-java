@@ -83,8 +83,12 @@ public class SistemaColaboradores {
                 if (ListaColaboradores.isEmpty()){
                     System.out.println("nenhum colaborador cadastrado ainda");
                 }else{
-                    
+                    for (int i = 0; i < ListaColaboradores.size(); i++ ){
+                        Colaborador c = ListaColaboradores.get(i);
+                        System.out.println((i + 1) + ". Nome: " + c.nome + "| Caargo: " + c.cargo + " | Salário final: R$" + c.sfinal);
+                    } 
                 }
+                break;
 
             }
             
